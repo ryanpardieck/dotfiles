@@ -1,0 +1,1 @@
+/Users/homebrew/.zprezto/runcoms/zprofile
