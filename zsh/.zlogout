@@ -1,1 +1,0 @@
-/Users/homebrew/.zprezto/runcoms/zlogout
