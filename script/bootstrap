@@ -135,7 +135,16 @@ install_dotfiles () {
     dst="$HOME/.$(basename "${src%.*}")"
     link_file "$src" "$dst"
   done
+
+  # for stuff that inists on being in own ~/.config/ dir, use .conlink
+  for src in $(find "$DOTFILES_ROOT" -maxdepth 2 -name '*.conlink')
+  do
+    dst="$HOME/.config/$(basename "$(dirname "${src}")")/$(basename "${src%.*}")"
+    link_file "$src" "$dst"
+  done
 }
+
+
 
 setup_gitconfig
 install_dotfiles
