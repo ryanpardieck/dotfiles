@@ -143,10 +143,11 @@ install_dotfiles
 # If we're on a Mac, let's install and setup homebrew.
 if [ "$(uname -s)" == "Darwin" ]
 then
-  info "installing dependencies (running brew update ... )"
+  info "installing dependencies (PLS RUN BREW UPDATE MANUALLY INSTEAD)"
+  # I've disabled the 'brew update' portion until I make this share its stdout
   if source bin/dot > /tmp/dotfiles-dot 2>&1
   then
-    success "dependencies installed"
+    success "dependencies installed (PLZ RUN BREW UPDATE MANUALLY INSTEAD)"
   else
     fail "error installing dependencies"
   fi

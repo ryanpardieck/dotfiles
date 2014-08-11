@@ -12,4 +12,4 @@ export ZSH=$HOME/.dotfiles
 # $ZSH/osx/set-defaults.sh
 
 # Upgrade homebrew
-brew update
+#brew update

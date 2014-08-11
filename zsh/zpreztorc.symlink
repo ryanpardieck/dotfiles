@@ -43,12 +43,9 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'tmux' \
   # 'wakeonlan' \
-  
-
-  'ruby' \
-
-  'syntax-highlighting' \
-  'history-substring-search' \
+  # 'ruby' \
+  # 'syntax-highlighting' \
+  # 'history-substring-search' \
   'prompt' \
 
 #
