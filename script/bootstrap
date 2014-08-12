@@ -137,6 +137,10 @@ install_dotfiles () {
   done
 
   # for stuff that inists on being in own ~/.config/ dir, use .conlink
+  # TODO: a better way to do this w/o conlink: indicate by folder name, like
+  #       'fish-config' etc.
+  #       Also, rewrite so I can do something like bootstrap.sh.symlink and
+  #       retain grammar association.
   for src in $(find "$DOTFILES_ROOT" -maxdepth 2 -name '*.conlink')
   do
     dst="$HOME/.config/$(basename "$(dirname "${src}")")/$(basename "${src%.*}")"
