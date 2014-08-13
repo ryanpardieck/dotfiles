@@ -1,12 +1,17 @@
 
 export EDITOR="vim"
 bindkey -v
+export PATH=/usr/local/bin:$PATH #keep that in front of everything, at all times!
+
 
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
 bindkey '^P' history-search-backward
 bindkey '^N' history-search-forward
+
+# So homebrew doesn't hit the rate limit ...
+source ~/.GITHUB_TOKEN
 
 setopt AUTO_CD
 
@@ -15,6 +20,15 @@ unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/helpfiles
 
+export NVM_DIR="/Users/homebrew/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# rvm stuff
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# 'cause rvm said so
+source ~/.profile
 
 
 #---inserted by oh-my-zsh---
@@ -72,7 +86,8 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # I put /usr/local/bin in front so homebrew install's take precedence
-export PATH="/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin:"
+export PATH="$PATH:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin:" #added $PATH: for rvm
+# the potential rvm issue here: https://github.com/robbyrussell/oh-my-zsh/pull/1359
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
