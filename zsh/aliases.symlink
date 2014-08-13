@@ -1,0 +1,14 @@
+alias emacs='emacsclient -nw -c -a ""'
+alias rm="rm -i"
+#TODO: rsync brewcave to dropbox
+
+
+# Vagrant Cheats
+# ===========================
+alias vup="vagrant up"
+alias vhalt="vagrant halt"
+alias vsuspend="vagrant suspend"
+alias vresume="vagrant resume"
+alias vreload="vagrant reload"
+alias vssh="vagrant ssh"
+alias vstatus="vagrant status"

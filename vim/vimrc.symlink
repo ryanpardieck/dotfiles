@@ -8,7 +8,7 @@
 "Also you have to install Vundle
 "to make this work.
 
-
+set shell=sh "In case I want to play with fish
 
 "--VUNDLE CONFIGURATION---
 "---KEEP ALL OF THIS AT THE TOP---
