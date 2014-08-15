@@ -327,6 +327,33 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Four-letter codes for the other view modes: `icnv`, `clmv`, `Flwv`
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
+# The following hack to sort folders first comes from https://gist.github.com/nickbudi/11277384
+
+# Set item arrangement to none (enables folder dropdowns, 'Name' if you want to remove them)
+defaults write com.apple.finder FXPreferredGroupBy -string "None"
+
+# Sort list view by kind in ascending order (Windows style)
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:ExtendedListViewSettings:sortColumn kind" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:ExtendedListViewSettings:columns:4:ascending true" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:ListViewSettings:sortColumn kind" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Set :StandardViewSettings:ListViewSettings:columns:kind:ascending true" ~/Library/Preferences/com.apple.finder.plist
+
+# Sort Folders before files hack (Windows style)
+FILE=/System/Library/CoreServices/Finder.app/Contents/Resources/English.lproj/InfoPlist.strings
+# Backup InfoPlist.strings first if no backup exists
+[ -f $FILE.bak ] || sudo ditto $FILE $FILE.bak
+# Convert InfoPlist.strings to XML
+sudo plutil -convert xml1 $FILE
+# Add a space in front of 'Folder' string
+sudo sed -i '' 's/g\>Folder/g\> Folder/' $FILE > /dev/null
+# Convert InfoPlist.strings back to binary
+sudo plutil -convert binary1 $FILE
+
+# Remove all .DS_Store files to reset folder specific view options
+sudo find / -name ".DS_Store" -depth -exec rm -f {} \;
+
+# END FOLDER-FIRST HACK
+
 # Disable the warning before emptying the Trash
 # defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
