@@ -18,6 +18,13 @@ set shell=sh "In case I want to play with fish
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
+" Highlight the current line when in insert mode
+:autocmd InsertEnter,InsertLeave * set cul!
+
+" change the cursor color by mode
+au InsertLeave * hi Cursor guibg=red
+au InsertEnter * hi Cursor guibg=green
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
