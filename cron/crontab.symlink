@@ -1,0 +1,1 @@
+53 * * * * cd ~ && rsync -av --delete-after 'brewcave/' 'Google Drive/mac-mirrors/brewcave/'

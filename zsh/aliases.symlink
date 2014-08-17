@@ -1,6 +1,8 @@
 alias emacs='emacsclient -nw -c -a ""'
 alias rm="rm -i"
-#TODO: rsync brewcave to dropbox
+
+# must be run from ~ ?
+alias copybrew="cd ~ && rsync -av --delete-after 'brewcave/' 'Google Drive/mac-mirrors/brewcave/'"
 
 
 # Vagrant Cheats
