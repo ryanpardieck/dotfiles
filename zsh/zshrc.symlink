@@ -1,4 +1,6 @@
 
+export ATOM_REPOS_HOME="brewcave/codebox/atom-dev/"
+
 export EDITOR="vim"
 bindkey -v
 export PATH=/usr/local/bin:$PATH #keep that in front of everything, at all times!
@@ -87,6 +89,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 # I put /usr/local/bin in front so homebrew install's take precedence
 export PATH="$PATH:/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin:" #added $PATH: for rvm
+export PATH=$PATH:/usr/local/opt/go/libexec/bin #for golang, see brew info go
 # the potential rvm issue here: https://github.com/robbyrussell/oh-my-zsh/pull/1359
 # export MANPATH="/usr/local/man:$MANPATH"
 
