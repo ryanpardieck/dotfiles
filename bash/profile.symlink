@@ -2,5 +2,3 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # sm framework ...
 export PATH="${PATH}:/Users/homebrew/.sm/bin:/Users/homebrew/.sm/pkg/active/bin:/Users/homebrew/.sm/pkg/active/sbin"
-
-export PATH=$PATH:/usr/local/lib/luarocks/bin/
