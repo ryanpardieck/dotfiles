@@ -4,6 +4,7 @@ alias rm="rm -i"
 # must be run from ~ ?
 alias copybrew="cd ~ && rsync -av --delete-after 'brewcave/' 'Google Drive/mac-mirrors/brewcave/'"
 
+alias youtube-dl="youtube-dl --max-quality=18"
 
 # Vagrant Cheats
 # ===========================
