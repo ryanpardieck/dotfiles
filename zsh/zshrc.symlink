@@ -1,6 +1,7 @@
 
 export ATOM_REPOS_HOME="brewcave/codebox/atom-dev/"
-export ATOM_PATH="~/Applications/"
+export ATOM_PATH="~/Applications/atom-app/"
+
 
 export EDITOR="vim"
 bindkey -v
