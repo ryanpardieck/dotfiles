@@ -141,6 +141,8 @@ install_dotfiles () {
   #       'fish-config' etc.
   #       Also, rewrite so I can do something like bootstrap.sh.symlink and
   #       retain grammar association.
+  # TODO: a better way to handle things that want to be in their own non-.config/
+  #       file, like .emacs/ or .lein/
   for src in $(find "$DOTFILES_ROOT" -maxdepth 2 -name '*.conlink')
   do
     dst="$HOME/.config/$(basename "$(dirname "${src}")")/$(basename "${src%.*}")"
