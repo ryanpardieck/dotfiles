@@ -1,6 +1,6 @@
 
 export ATOM_REPOS_HOME="brewcave/codebox/atom-dev/"
-export ATOM_PATH="~/Applications/atom-app/"
+export ATOM_PATH="/Users/homebrew/Applications/atom-app/" #TODO: hide this in a gitignored config file?
 
 
 export EDITOR="vim"
