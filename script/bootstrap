@@ -65,7 +65,7 @@ link_file () {
 
       local currentSrc="$(readlink $dst)"
 
-      if [ "$currentSrc" == "$src" ]
+      if [ "$currentSrc" == "$src" ] || [[ $src =~ ".live-archive" ]]
       then
 
         skip=true;
