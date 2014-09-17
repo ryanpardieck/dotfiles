@@ -1,0 +1,27 @@
+ATOM BUGS TO POSSIBLY REPORT
+
+when a new version of a package becomes available, and you haven't yet updated,
+  but say you're searching in the setting-menu package search. it will display
+  with 'install' as if it weren't installed at all. 'update' would be better
+
+- package update: "version x is installed" but update button still shown.
+  I took a screencap
+
+- lots of weird bugs with the audio beep
+
+the save dialog seems to be defaulting to .ATOM files a lot. maybe just when
+  saving from this atomfiles repo.
+
+Plugin downloads seem awfully big??
+
+-travis-ci-status taking absurdly long to load. vim-mode also slow
+
+-autoflow selection doesn't seem to work on my config-scribbles
+-my package: the red showing up when typing in package search box in settings. find
+  some way to make the red specific to only an editing pane
+
+  -vim mode y then p doesnt seem to always work
+
+-visual-bell isn't displaying for whatever reason
+
+-probably an os-level bug with alt-x beeping

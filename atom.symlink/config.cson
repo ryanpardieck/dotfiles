@@ -1,0 +1,126 @@
+'exception-reporting':
+  'userId': 'e974717b-120a-9de9-0b29-48a7898e2d16'
+'welcome':
+  'showOnStartup': false
+'editor':
+  'showIndentGuide': true
+  'softWrapAtPreferredLineLength': true
+  'invisibles': {}
+'core':
+  'useReactEditor': true
+  'disabledPackages': [
+    'project-colorize'
+    'irc'
+    'emacs-mode'
+    'neon-cursor'
+    'neon-selection'
+    'coffee-compiler'
+    'autosave'
+    'atom-spotify'
+    'Rdio'
+    'autocomplete'
+    'atomic-emacs'
+    'tabs'
+    'tree-view'
+    'tree-view-breadcrumb'
+    'project-quick-open'
+    'tab-switcher'
+    'Dyslexia'
+  ]
+  'themes': [
+    'seti-ui'
+    'seti-syntax'
+  ]
+  'projectHome': '/Users/homebrew/brewcave/'
+'metrics':
+  'userId': '7de5fa148d263ab1b7d2dd77eacedec54c8c8cf3'
+'vim-mode': {}
+'project-manager':
+  'showPath': true
+  'sortByTitle': true
+'tree-view':
+  'hideVcsIgnoredFiles': false
+  'hideIgnoredNames': false
+  'showOnRightSide': false
+'markdown-preview': {}
+'whitespace': {}
+'autosave':
+  'enabled': true
+'autocomplete':
+  'includeCompletionsFromAllBuffers': true
+'emacs-mode':
+  'hideTabs': false
+  'hideSidebar': false
+  'useEmacsCursor': true
+  'useFuzzyFileFinder': true
+  'useFuzzyBufferFinder': true
+'irc':
+  'channels': '#node.js'
+  'host': 'irc.freenode.com'
+  'nickname': 'blah'
+  'password': 'blah'
+  'port': '6667'
+'autocomplete-plus':
+  'includeCompletionsFromAllBuffers': true
+'jumpy':
+  'highContrast': true
+  'fontSize': 1
+'git-plus':
+  'wordDiff': false
+'break':
+  'macroBreakLengthInSeconds': 10
+  'microBreakLengthInSeconds': 2
+  'microBreakIntervalInSeconds': 200
+'weather-package':
+  'showInFahrenheit': true
+  'showTemperature': true
+  'showPressure': true
+'remember-window':
+  'x': 0
+  'y': 22
+  'width': 1440
+  'height': 824
+  'treeWidth': 0
+'incremental-search': {}
+'minimap':
+  'autoToggle': true
+'find-and-replace':
+  'openProjectFindResultsInRightPane': true
+  'focusEditorAfterSearch': true
+'enhanced-package-list':
+  'sourceFilter': 'user'
+'atom-spotify':
+  'showEqualizer': true
+'Rdio':
+  'showEqualizer (WindowResizePerformanceIssue )': false
+'background-matrix':
+  'leetCharacters': true
+  'chineseCharacters': true
+'pomodoro':
+  'playSounds': false
+'tabs':
+  'showIcons': true
+'fuzzy-finder': {}
+'coffee-compile':
+  'noTopLevelFunctionWrapper': false
+  'focusEditorAfterCompile': true
+'glist':
+  'ispublic': false
+  'userName': 'ryanpardieck'
+'Ruler':
+  'enabled': true
+  'position': 80
+'toggle-tabs': {}
+'toggle-packages':
+  'togglePackages': [
+    'break'
+  ]
+'restore-windows': {}
+'remember-session':
+  'x': 0
+  'y': 22
+  'width': 1440
+  'height': 824
+  'path': '/Users/homebrew/brewcave/codebox/jester-shell'
+  'tabs': ''
+'wrap-lines': {}

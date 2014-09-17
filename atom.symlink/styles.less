@@ -1,0 +1,89 @@
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is  when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+.tree-view {
+
+}
+
+// .pane-row .pane:nth-child(2) {
+//     max-width: 38.2%;
+// }
+
+@import "ui-variables";
+
+// the different background-color-X vars: -info, -success, -warning, -error,
+// -highlight, -selected
+.pane:not([class*="panel"]) .editor .line:not(.cursor-line) .trailing-whitespace {
+    background: @background-color-error; //@background-color-selected;
+    border-radius: 2px;
+}
+// get rid of the cursorline bit above since I had to turn the below back on?
+// I had to turn it on because comment cursor-lines we're getting highlighted
+// TODO: in settings menu, packages search bar is showing red again
+
+.cursor-line  .trailing-whitespace {
+  opacity: 0;
+}
+
+// [class*="panel"] .trailing-whitespace  {
+  // opacity: 0;
+// }
+//an update to trailing-spaces
+//PACKAGE THIS SLIGHT IMPROVEMENT??? - eh its being killed on save!
+//add a config to ignore whitespace-only lines for markdown files etc
+//add a config to turn off the harashness
+
+
+
+// changing the "flash jump" color in find-replace
+@import "syntax-variables";
+
+@-webkit-keyframes flash {
+  @syntax-selection-flash-color:@background-color-warning;
+  from { background-color: @syntax-selection-flash-color; }
+  to { background-color: null; }
+}
+
+// changing the find-replace highlight colors to stand out a bit more
+
+.editor .highlight.find-result .region {
+  // border-color:@syntax-selection-flash-color;
+  border-color:@background-color-selected;
+  // border-color:@background-color-warning;
+  // border-color:@background-color-success;
+}
+
+.editor .highlight.current-result .region {
+  // border-color:@syntax-selection-flash-color;
+  // border-color:@background-color-selected;
+  // border-color:@background-color-warning;
+  border-color:@background-color-warning;
+}
+
+// do the same for the i-search highlighting
+.editor .isearch-result .region {
+  border-color: @background-color-selected;
+}
+
+.editor .isearch-current .region {
+  border-color: @background-color-warning;
+}
+
+.tab-bar {
+  // display: none;
+}
+
+.editor {
+
+}
+
+.editor .cursor {
+
+}

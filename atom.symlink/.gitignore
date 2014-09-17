@@ -1,0 +1,13 @@
+storage
+compile-cache
+dev
+.npm
+.node-gyp
+projects.cson
+config-scribbles.org
+keybindings-remember.org
+recent-projects.json
+break-quotes
+restore-windows
+.live-archive
+packages

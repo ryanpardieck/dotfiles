@@ -1,0 +1,66 @@
+# Your keymap
+#
+# Atom keymaps work similarly to stylesheets. Just as stylesheets use selectors
+# to apply styles to elements, Atom keymaps use selectors to associate
+# keystrokes with events in specific contexts.
+#
+# You can create a new keybinding in this file by typing "key" and then hitting
+# tab.
+#
+# Here's an example taken from Atom's built-in keymap:
+#
+# '.editor':
+#   'enter': 'editor:newline'
+#
+# '.workspace':
+#   'ctrl-P': 'core:move-up'
+#   'ctrl-p': 'core:move-down'
+#
+
+
+# remapping for an emacs-like m-x
+
+'body':
+  'cmd-x': 'command-palette:toggle'
+  'ctrl-x': 'command-palette:toggle'
+
+'.workspace':
+  'cmd-shift-T': 'unset!' # unsetting the terminal-status:new command
+
+'.platform-darwin':
+  'cmd-x': 'command-palette:toggle'
+  'ctrl-x': 'command-palette:toggle'
+  'cmd-shift-E': 'scratchpad:toggle'
+  'cmd-shift-Y': 'live-archive:open'
+  'cmd-shift-T': 'terminal-status:toggle' #cmd-t?
+# boy this is ugly as hell too! it even clobbers core:cut.
+# do I want it at cmd or ctrl? experiment ...
+
+'body':
+  'ctrl-j': 'core:move-down'
+  'ctrl-k': 'core:move-up'
+
+'.editor':
+  'ctrl-j': 'core:move-down'
+  'ctrl-k': 'core:move-up'
+
+# boy that's ugly
+
+# an attempt at adding jj to esc
+# from https://github.com/atom/vim-mode/issues/334
+# had to add "not(.visual-mode)" mode because it was breaking visual mode j/k
+# movement keys
+'.editor.vim-mode:not(.command-mode):not(.visual-mode)':
+  'j j': 'vim-mode:activate-command-mode'
+
+'.editor.vim-mode.insert-mode':
+  'j': 'insert-incomplete-keybinding'
+
+# a small hack to experiment with bringing back :w,
+# even though I really want to use command-pallete on :, I think
+
+'.editor.vim-mode:not(.insert-mode)':
+  ':': 'command-palette:toggle' #make a 'w' command to save
+  # ': w enter': 'core:save'
+
+# next: return to normal mode after lose focus > 10sec
