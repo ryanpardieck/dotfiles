@@ -17,6 +17,21 @@
 #   'ctrl-p': 'core:move-down'
 #
 
+###
+# My pesonal keymap philsophy  for now:
+# Use only two modifier keys, a 'C' key that will be either cmd or ctrl depending on
+# platform/preference, and the shift 'S' key. Forget alt altogether (right now I tend
+# to use alt for system-wide bindings anyway). Anything not important enough to
+# make it onto a c- or c-s- binding gets mapped to a vim-leader command (which
+# I still need to implement) or it simply gets called from the command pallete.
+# In general, favor opening modal dialogues with these bindings rather than spraying,
+# say, git-shortcut commands all across the c- and c-s- binding space.
+# A bad example: c-s-l for "git log" and c-s-s for "git status".
+# A good example: c-s-g for opening a "git cmds" fuzzyfinder panel, and then
+# s-enter for quick hop to status, l-enter for quick hop to log.
+# which makes the commands, functionally: c-s-g-s-enter for git status, etc.
+###
+
 
 # remapping for an emacs-like m-x
 
@@ -31,7 +46,7 @@
   'cmd-x': 'command-palette:toggle'
   'ctrl-x': 'command-palette:toggle'
   'cmd-shift-E': 'scratchpad:toggle'
-  'cmd-shift-Y': 'live-archive:open'
+  'shift-cmd-Y': 'live-archive:open'
   'cmd-shift-T': 'terminal-status:toggle' #cmd-t?
 # boy this is ugly as hell too! it even clobbers core:cut.
 # do I want it at cmd or ctrl? experiment ...
@@ -43,6 +58,16 @@
 '.editor':
   'ctrl-j': 'core:move-down'
   'ctrl-k': 'core:move-up'
+
+# setting project-manager selection panel to cmd-shift-o (default: ctrl-cmd-o)
+'.platform-darwin':
+  'shift-cmd-o': 'project-manager:toggle'
+
+'.platform-win32':
+  'shift-cmd-o': 'project-manager:toggle'
+
+'.platform-linux':
+  'shift-cmd-o': 'project-manager:toggle'
 
 # boy that's ugly
 

@@ -3,9 +3,8 @@
 'welcome':
   'showOnStartup': false
 'editor':
-  'showIndentGuide': true
   'softWrapAtPreferredLineLength': true
-  'invisibles': {}
+  'showIndentGuide': true
 'core':
   'useReactEditor': true
   'disabledPackages': [
@@ -21,11 +20,15 @@
     'autocomplete'
     'atomic-emacs'
     'tabs'
-    'tree-view'
     'tree-view-breadcrumb'
     'project-quick-open'
     'tab-switcher'
     'Dyslexia'
+    'disable-arrow-keys'
+    'toggle-tabs'
+    'raptorize'
+    'tree-view'
+    'recent-projects'
   ]
   'themes': [
     'seti-ui'
@@ -34,16 +37,12 @@
   'projectHome': '/Users/homebrew/brewcave/'
 'metrics':
   'userId': '7de5fa148d263ab1b7d2dd77eacedec54c8c8cf3'
-'vim-mode': {}
 'project-manager':
-  'showPath': true
   'sortByTitle': true
 'tree-view':
   'hideVcsIgnoredFiles': false
   'hideIgnoredNames': false
   'showOnRightSide': false
-'markdown-preview': {}
-'whitespace': {}
 'autosave':
   'enabled': true
 'autocomplete':
@@ -68,9 +67,8 @@
 'git-plus':
   'wordDiff': false
 'break':
-  'macroBreakLengthInSeconds': 10
-  'microBreakLengthInSeconds': 2
-  'microBreakIntervalInSeconds': 200
+  'microBreakLengthInSeconds': 10
+  'macroBreakLengthInSeconds': 30
 'weather-package':
   'showInFahrenheit': true
   'showTemperature': true
@@ -81,14 +79,9 @@
   'width': 1440
   'height': 824
   'treeWidth': 0
-'incremental-search': {}
-'minimap':
-  'autoToggle': true
 'find-and-replace':
   'openProjectFindResultsInRightPane': true
   'focusEditorAfterSearch': true
-'enhanced-package-list':
-  'sourceFilter': 'user'
 'atom-spotify':
   'showEqualizer': true
 'Rdio':
@@ -100,7 +93,6 @@
   'playSounds': false
 'tabs':
   'showIcons': true
-'fuzzy-finder': {}
 'coffee-compile':
   'noTopLevelFunctionWrapper': false
   'focusEditorAfterCompile': true
@@ -110,12 +102,10 @@
 'Ruler':
   'enabled': true
   'position': 80
-'toggle-tabs': {}
 'toggle-packages':
   'togglePackages': [
     'break'
   ]
-'restore-windows': {}
 'remember-session':
   'x': 0
   'y': 22
@@ -123,4 +113,5 @@
   'height': 824
   'path': '/Users/homebrew/brewcave/codebox/jester-shell'
   'tabs': ''
-'wrap-lines': {}
+'atom-beautify':
+  '_analyticsUserId': 'c558257d-1141-4cdd-b112-7195223c515a'
