@@ -127,14 +127,15 @@ source ~/.aliases
 #-----
 
 # Setup zsh-autosuggestions
-source ~/.zsh-autosuggestions/autosuggestions.zsh
-AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=250'
-# Enable autosuggestions automatically
-zle-line-init() {
-    zle autosuggest-start
-}
-zle -N zle-line-init
-
-# use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
-# zsh-autosuggestions is designed to be unobtrusive)
-bindkey '^T' autosuggest-toggle
+# Commented all this out because zsh-autosuggestions was broken
+# source ~/.zsh-autosuggestions/autosuggestions.zsh
+# AUTOSUGGESTION_HIGHLIGHT_COLOR='fg=250'
+# # Enable autosuggestions automatically
+# zle-line-init() {
+#     zle autosuggest-start
+# }
+# zle -N zle-line-init
+#
+# # use ctrl+t to toggle autosuggestions(hopefully this wont be needed as
+# # zsh-autosuggestions is designed to be unobtrusive)
+# bindkey '^T' autosuggest-toggle
