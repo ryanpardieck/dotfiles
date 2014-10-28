@@ -6,7 +6,6 @@
   'editor':
     'softWrapAtPreferredLineLength': true
     'showIndentGuide': true
-    'invisibles': {}
   'core':
     'useReactEditor': true
     'disabledPackages': [
