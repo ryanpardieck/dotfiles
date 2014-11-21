@@ -30,6 +30,9 @@
       'raptorize'
       'tree-view'
       'recent-projects'
+      'toggle-packages'
+      'org'
+      'terminal-status'
     ]
     'themes': [
       'seti-ui'
@@ -119,3 +122,5 @@
     '_analyticsUserId': 'c558257d-1141-4cdd-b112-7195223c515a'
   'enhanced-package-list':
     'sourceFilter': 'user'
+'.org.text':
+  'editor': {}
