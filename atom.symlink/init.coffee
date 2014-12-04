@@ -16,11 +16,11 @@
 # Code for vim 'jj' escape. Commmenting out because want to get better at either
 # caps-lock-for-esc or ctrl-[
 
-# atom.workspaceView.command 'insert-incomplete-keybinding', (e)->
-#   if oe = e.originalEvent && e.originalEvent.originalEvent
-#     char = String.fromCharCode(oe.which)
-#     char = char.toLowerCase() unless oe.shift
-#     atom.workspace.activePaneItem.insertText(char)
+atom.workspaceView.command 'insert-incomplete-keybinding', (e)->
+  if oe = e.originalEvent && e.originalEvent.originalEvent
+    char = String.fromCharCode(oe.which)
+    char = char.toLowerCase() unless oe.shift
+    atom.workspace.activePaneItem.insertText(char)
 # understand this code a bit better later ... ^
 
 atom.workspaceView.command 'w:save', ->

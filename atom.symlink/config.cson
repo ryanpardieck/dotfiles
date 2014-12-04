@@ -115,29 +115,29 @@
   'atom-beautify':
     '_analyticsUserId': 'c558257d-1141-4cdd-b112-7195223c515a'
   'linter': {}
-'.diff.source':
-  'editor': {}
-'.nant-build.source':
-  'editor': {}
-'.fish.source':
-  'editor': {}
-'.rust.source':
-  'editor': {}
-'.git-rebase.text':
-  'editor': {}
-'.clojure.source':
-  'editor': {}
-'.org.text':
-  'editor': {}
-'.git-commit.text':
-  'editor': {}
-'.git-config.source':
-  'editor': {}
-'.julia.source':
+'.csx.source':
   'editor': {}
 '.cs.source':
   'editor': {}
-'.csx.source':
+'.julia.source':
+  'editor': {}
+'.git-config.source':
+  'editor': {}
+'.git-commit.text':
+  'editor': {}
+'.org.text':
+  'editor': {}
+'.clojure.source':
+  'editor': {}
+'.git-rebase.text':
+  'editor': {}
+'.rust.source':
+  'editor': {}
+'.fish.source':
+  'editor': {}
+'.nant-build.source':
+  'editor': {}
+'.diff.source':
   'editor': {}
 '.diff':
   'editor': {}

@@ -77,11 +77,11 @@
 # movement keys
 # removing it for now, see init script for reasons
 
-# '.editor.vim-mode:not(.command-mode):not(.visual-mode)':
-#   'j j': 'vim-mode:activate-command-mode'
-#
-# '.editor.vim-mode.insert-mode':
-#   'j': 'insert-incomplete-keybinding'
+'.editor.vim-mode:not(.command-mode):not(.visual-mode)':
+  'j j': 'vim-mode:activate-command-mode'
+
+'.editor.vim-mode.insert-mode':
+  'j': 'insert-incomplete-keybinding'
 
 # a small hack to experiment with bringing back :w,
 # even though I really want to use command-pallete on :, I think
