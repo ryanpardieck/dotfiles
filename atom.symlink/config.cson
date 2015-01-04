@@ -19,7 +19,6 @@
       'atom-spotify'
       'Rdio'
       'autocomplete'
-      'atomic-emacs'
       'tabs'
       'tree-view-breadcrumb'
       'project-quick-open'
@@ -34,6 +33,7 @@
       'org'
       'terminal-status'
       'metrics'
+      'vim-mode'
     ]
     'themes': [
       'seti-ui'
